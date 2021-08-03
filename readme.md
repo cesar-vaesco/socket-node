@@ -36,5 +36,14 @@
     - Se agrega en el index spna que contienen contenido el cual va a mostrar cuando se este conectado o desconectado
     - En socket-client.js (front-end) se agrega la funcionalidad que va ayudar a mostrar el mensaje que nos va a avisar si el clente esta conectado o desconectado
 
+- 5.-  <span style="color:#82b74b">Emitiendo mensaje desde el cliente - Escuchar desde el servidor</span>
+    - Se crea en el index una caja de texto y un botón lo cúal va ayudar a enviar un mensaje al cliente
+        - La caja de texto y el botón van a contar con identificadores, los cuales van aservir para disparar un evento
+    - En el archivo del servidor dentro de la funcion de socket, se configura para que el socket este escuchando el
+    - mensaje del cliente y mostrarlo en consola del backend
+    - En socket-client.js se crea el evento que permite enviar el texto(mensaje) en el index, este mensaje contiene la carga de un objeto. En el mismo evento se declara que socket emita el mensaje enviado por el cliente
+
+
+
 
 <span style="color:#c94c4c"></span>

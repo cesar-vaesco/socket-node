@@ -1,7 +1,9 @@
 // REferencias del html para actual
-const lblonline  = document.querySelector('#lblonline');
+const lblonline = document.querySelector('#lblonline');
 const lbloffline = document.querySelector('#lbloffline');
 
+const txtMensaje = document.querySelector('#txtMensaje');
+const btnEnviar = document.querySelector('#btnEnviar');
 
 const socket = io();
 
@@ -22,4 +24,17 @@ socket.on('disconnect', () => {
     lbloffline.style.display = '';
 
     console.log('Desconectado..');
+});
+
+
+btnEnviar.addEventListener('click', () => {
+    const mensaje = txtMensaje.value;
+
+    const payload = {
+        mensaje,
+        id: 'asdc1245dfghth778sd',
+        fecha:new Date().getTime()
+    }
+
+    socket.emit('enviar-mensaje', payload);
 });
