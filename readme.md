@@ -18,7 +18,7 @@
     - Instalando las librerías express, dotenv, cors y colors
     - Configurando el cdn de BOOTSTRAP
 
-- 2.-  <span style="color:#82b74b">Creando el servidor de socket.io</span>
+- 2.-  <span style="color:#82b74b">Creando el servidor de socket.io - Instalación de Socket.io</span>
     - Instalando el paquete de socket.io con npm
     - Modificando el archivo server para crear un servidor de web-sockets
         - Al arrancar nuevamente el servidor se requiere serciorarce de que socket.io ya se encuentra instalado en nuestro servidor, para ello se requiere ir al siguiente url: http://localhost:8080/socket.io/socket.io.js y se tiene que observar lo siguiente:
@@ -29,6 +29,7 @@
         <img src="public/img/servidor-socket.png" width="1000" height="500">
     </p>
 
-
+- 3.-  <span style="color:#82b74b">Configuración de socket.io - Front end</span>
+    - Se agrega la función que conecta y desconecta la cmunicación de socket.io al recargar el servicio
 
 <span style="color:#c94c4c"></span>
