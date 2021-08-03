@@ -32,4 +32,9 @@
 - 3.-  <span style="color:#82b74b">Configuración de socket.io - Front end</span>
     - Se agrega la función que conecta y desconecta la cmunicación de socket.io al recargar el servicio
 
+- 4.-  <span style="color:#82b74b">Mensajes de conexión y desconexión - Cliente</span>
+    - Se agrega en el index spna que contienen contenido el cual va a mostrar cuando se este conectado o desconectado
+    - En socket-client.js (front-end) se agrega la funcionalidad que va ayudar a mostrar el mensaje que nos va a avisar si el clente esta conectado o desconectado
+
+
 <span style="color:#c94c4c"></span>
