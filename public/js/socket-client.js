@@ -13,7 +13,7 @@ socket.on('connect', () => {
     lbloffline.style.display = 'none';
     lblonline.style.display = '';
 
-    console.log('Conectado..');
+    /* console.log('Conectado..'); */
 
 });
 
@@ -23,8 +23,12 @@ socket.on('disconnect', () => {
     lblonline.style.display = 'none';
     lbloffline.style.display = '';
 
-    console.log('Desconectado..');
+    /*  console.log('Desconectado..'); */
 });
+
+socket.on('enviar-mensaje', (payload) => {
+    console.log(payload);
+})
 
 
 btnEnviar.addEventListener('click', () => {
@@ -33,7 +37,7 @@ btnEnviar.addEventListener('click', () => {
     const payload = {
         mensaje,
         id: 'asdc1245dfghth778sd',
-        fecha:new Date().getTime()
+        fecha: new Date().getTime()
     }
 
     socket.emit('enviar-mensaje', payload);

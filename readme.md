@@ -43,6 +43,10 @@
     - mensaje del cliente y mostrarlo en consola del backend
     - En socket-client.js se crea el evento que permite enviar el texto(mensaje) en el index, este mensaje contiene la carga de un objeto. En el mismo evento se declara que socket emita el mensaje enviado por el cliente
 
+- 6.-  <span style="color:#82b74b">Emitiendo mensaje desde el servidor - Escuchar desde el cliente</span>
+    - En el archvio server.js se carga el mensaje que el servidor va a compartir con sus clientes
+    - En el archivo socket-client.js se carga el mensaje que el servidor ya ha enviado
+
 
 
 
