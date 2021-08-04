@@ -65,6 +65,7 @@
                 -  Si se le esta dando seguimiento a nuestra app con un repositorio en local, lo anterior no sería necesario.
     - Finalmente en consola, terminal , línea de comandos se usa el comando git push heroku main para subir a producción nuestra app
 
-
+### <span style="color:#b5e7a0">Hosting en HEROKU :</span>
+[App productiva --> https://sockets-node-ces.herokuapp.com/]( https://sockets-node-ces.herokuapp.com/)
 
 <span style="color:#c94c4c"></span>
