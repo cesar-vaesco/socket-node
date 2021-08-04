@@ -50,6 +50,9 @@
 - 7.-  <span style="color:#82b74b">Retroalimentación de emisiones del cliente hacia el servidor</span>
     - Se configura un callback en la función socket.on('enviar-mensaje'.. de server.js para qu exista retroalimentación del envio de mensajes
 
+- 8 .-  <span style="color:#82b74b">Broadcast - Ordenar nuestro código</span>
+    - Se crea controlador para desentralizar la funcionalidad del socket
+
 
 
 

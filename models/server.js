@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const { socketController } = require('../sockets/socket.controller');
 
 require('colors');
 
@@ -50,31 +51,12 @@ class Server {
     }
 
     sockets(){
-        this.io.on('connection', socket => {
-
-            /* console.log('Cliente conectado...', socket.id); */
-
-            socket.on('disconnect', () => {
-                /* console.log('Cliente desconectado'); */
-            });
-
-            socket.on('enviar-mensaje', (payload, callback) => {
-
-
-                const id = 123456;
-                callback( id );
-
-                socket.broadcast.emit('enviar-mensaje', payload);
-                /* console.log(payload); */
-                /* this.io.emit('enviar-mensaje', payload ); */
-            });
-
-        });
+        this.io.on('connection', socketController);
     }
 
     listen() {
         this.server.listen(this.port, () => {
-            console.log(`\nServidor corriendo en el puerto ${this.port.green} -  http://localhost:${this.port.green}`)
+            console.log(`\nServidor corriendo en el puerto ${this.port.green} -  http://localhost:${this.port.green}\n`)
         })
     }
 
