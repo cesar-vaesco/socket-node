@@ -53,6 +53,17 @@
 - 8 .-  <span style="color:#82b74b">Broadcast - Ordenar nuestro código</span>
     - Se crea controlador para desentralizar la funcionalidad del socket
 
+- 9 .-  <span style="color:#82b74b">Subir app a HEROKU</span>
+  <br>
+    ``` ASEGURARSE QUE EN EL ARCHIVO PACKAGE.JSON SE ENCUENTRE CONFIGURADO EL SCRIPT "start": "node app" ```
+  <br>
+    -  heroku login -> loguaer a https://www.heroku.com/
+    -  Crear un nuevo proyecto en el dashboard
+    -  Inicializar proyecto con git en la carpeta del proyecto
+    -  Enlazar nuestro proyecto con heroku desde consola, terminal , línea de comandos -> heroku git:remote -a nombre-proyecto
+          -  Antes de enviar a producción nuestra app, verificar que ya se haya realizado un commit,
+                -  Si se le esta dando seguimiento a nuestra app con un repositorio en local, lo anterior no sería necesario.
+    - Finalmente en consola, terminal , línea de comandos se usa el comando git push heroku main para subir a producción nuestra app
 
 
 
