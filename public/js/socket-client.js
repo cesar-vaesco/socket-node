@@ -33,12 +33,14 @@ socket.on('enviar-mensaje', (payload) => {
 
 btnEnviar.addEventListener('click', () => {
     const mensaje = txtMensaje.value;
-
     const payload = {
         mensaje,
         id: 'asdc1245dfghth778sd',
         fecha: new Date().getTime()
     }
 
-    socket.emit('enviar-mensaje', payload);
+    socket.emit('enviar-mensaje', payload, function (id) {
+        console.log('Desde el server ', id);
+    });
+
 });

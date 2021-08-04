@@ -55,12 +55,18 @@ class Server {
             /* console.log('Cliente conectado...', socket.id); */
 
             socket.on('disconnect', () => {
-                console.log('Cliente desconectado');
+                /* console.log('Cliente desconectado'); */
             });
 
-            socket.on('enviar-mensaje',(payload) => {
+            socket.on('enviar-mensaje', (payload, callback) => {
+
+
+                const id = 123456;
+                callback( id );
+
+                socket.broadcast.emit('enviar-mensaje', payload);
                 /* console.log(payload); */
-                this.io.emit('enviar-mensaje', payload );
+                /* this.io.emit('enviar-mensaje', payload ); */
             });
 
         });

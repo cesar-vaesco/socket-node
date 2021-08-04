@@ -47,6 +47,9 @@
     - En el archvio server.js se carga el mensaje que el servidor va a compartir con sus clientes
     - En el archivo socket-client.js se carga el mensaje que el servidor ya ha enviado
 
+- 7.-  <span style="color:#82b74b">Retroalimentación de emisiones del cliente hacia el servidor</span>
+    - Se configura un callback en la función socket.on('enviar-mensaje'.. de server.js para qu exista retroalimentación del envio de mensajes
+
 
 
 
